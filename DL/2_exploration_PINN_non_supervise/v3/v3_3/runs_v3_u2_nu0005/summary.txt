@@ -1,0 +1,17 @@
+PINN V3a fixed-case summary
+device: cuda
+U: 2.0
+alpha_deg: 5.0
+nu: 0.005
+q: 2.0
+freestream: u=+1.992389e+00, v=+1.743115e-01
+CL_teacher: +3.792563e-01
+surface signed area: -8.228156e-02
+surface perimeter: +2.043920e+00
+
+Pressure-only coefficients with projected directions:
+Fx=-2.316740e-02, Fy=-1.075725e-02
+D=-2.401680e-02, L=-8.697146e-03
+CD_pressure=-1.200840e-02, CL_pressure=-4.348573e-03
+
+Note: CD is pressure-only, viscous drag is not included.

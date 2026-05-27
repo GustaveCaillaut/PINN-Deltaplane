@@ -1,0 +1,11 @@
+{
+  "coeffs": {
+    "Fx_coeff": -0.0015643329930468655,
+    "Fy_coeff": 0.0004767685781050246,
+    "CD_pressure": -0.0015168271141797905,
+    "CL_pressure": 0.0006112949336386325,
+    "CM_ref": -6.640858557392312e-06
+  },
+  "xfoil_coeffs": null,
+  "cp_mae_vs_xfoil": null
+}

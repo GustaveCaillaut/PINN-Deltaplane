@@ -1,0 +1,4 @@
+python generate_xfoil_cp_dataset.py \
+  --alphas="0" \
+  --re=200000 \
+  --outdir=xfoil_cp_dataset_naca2412_viscous_easy

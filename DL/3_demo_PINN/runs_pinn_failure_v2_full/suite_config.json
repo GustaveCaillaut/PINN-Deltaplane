@@ -1,0 +1,22 @@
+{
+  "preset": "full",
+  "cp_data_csv": "xfoil_cp_dataset_naca2412_dense_Re200k/xfoil_cp_dataset.csv",
+  "cases": [
+    "01_baseline_Re200",
+    "02_farCp_all_boundaries",
+    "03_outflowCp_right_top",
+    "04_fourier_Re200",
+    "05_kutta_Re200",
+    "10_Re200_pure",
+    "11_Re200_kutta",
+    "10_Re1000_pure",
+    "11_Re1000_kutta",
+    "10_Re5000_pure",
+    "11_Re5000_kutta",
+    "10_Re20000_pure",
+    "11_Re20000_kutta",
+    "20_xfoil_data_only_surface",
+    "21_xfoil_data_weakPDE"
+  ],
+  "n_surface": 450
+}

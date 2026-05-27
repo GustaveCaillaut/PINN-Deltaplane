@@ -1,0 +1,134 @@
+{
+  "config": {
+    "param_mode": "fixed",
+    "U": 2.0,
+    "U_min": 1.0,
+    "U_max": 3.0,
+    "alpha_deg": 5.0,
+    "alpha_min_deg": -15.0,
+    "alpha_max_deg": 15.0,
+    "nu": 0.01,
+    "domain": [
+      -4.0,
+      6.0,
+      -3.0,
+      3.0
+    ],
+    "naca": {
+      "m": 0.02,
+      "p": 0.4,
+      "t": 0.12
+    },
+    "normal_check": {
+      "ok": true,
+      "plus_out": 1.0,
+      "minus_in": 0.9992857142857143
+    },
+    "fourier": {
+      "mode": "multiscale",
+      "n_freqs": 16,
+      "scale": 1.0
+    },
+    "loss_weights": {
+      "w_pde": 1.0,
+      "w_div": 5.0,
+      "w_near_pde": 20.0,
+      "w_near_div": 50.0,
+      "w_inflow_vel": 10.0,
+      "w_wall": 50.0,
+      "w_pressure_gauge": 1.0,
+      "w_outflow_cp": 0.0,
+      "w_far_cp": 0.0,
+      "w_kutta": 10.0,
+      "w_kutta_cp": 1.0,
+      "w_kutta_vel": 1.0,
+      "w_wake_align": 0.0,
+      "w_data": 10.0,
+      "w_cl": 0.0
+    },
+    "cp_data_csv": "xfoil_cp_dataset_naca2412_full/xfoil_cp_dataset.csv"
+  },
+  "coefficients_diag": [
+    {
+      "alpha_deg": -10.0,
+      "U": 2.0,
+      "Fx": NaN,
+      "Fy": NaN,
+      "D": NaN,
+      "L": NaN,
+      "CD": NaN,
+      "CL": NaN
+    },
+    {
+      "alpha_deg": -5.0,
+      "U": 2.0,
+      "Fx": NaN,
+      "Fy": NaN,
+      "D": NaN,
+      "L": NaN,
+      "CD": NaN,
+      "CL": NaN
+    },
+    {
+      "alpha_deg": 0.0,
+      "U": 2.0,
+      "Fx": NaN,
+      "Fy": NaN,
+      "D": NaN,
+      "L": NaN,
+      "CD": NaN,
+      "CL": NaN
+    },
+    {
+      "alpha_deg": 5.0,
+      "U": 2.0,
+      "Fx": NaN,
+      "Fy": NaN,
+      "D": NaN,
+      "L": NaN,
+      "CD": NaN,
+      "CL": NaN
+    },
+    {
+      "alpha_deg": 10.0,
+      "U": 2.0,
+      "Fx": NaN,
+      "Fy": NaN,
+      "D": NaN,
+      "L": NaN,
+      "CD": NaN,
+      "CL": NaN
+    },
+    {
+      "alpha_deg": 15.0,
+      "U": 2.0,
+      "Fx": NaN,
+      "Fy": NaN,
+      "D": NaN,
+      "L": NaN,
+      "CD": NaN,
+      "CL": NaN
+    }
+  ],
+  "history_last": {
+    "total": NaN,
+    "pde": NaN,
+    "div": NaN,
+    "near_pde": NaN,
+    "near_div": NaN,
+    "inflow": NaN,
+    "wall": NaN,
+    "gauge": NaN,
+    "outflow_cp": NaN,
+    "far_cp": NaN,
+    "kutta": NaN,
+    "kutta_cp": NaN,
+    "kutta_vel": NaN,
+    "wake": 0.0,
+    "data_mse": NaN,
+    "data_mae": NaN,
+    "cl_loss": 0.0,
+    "cl_diag": NaN,
+    "cf": 1.0
+  }
+}

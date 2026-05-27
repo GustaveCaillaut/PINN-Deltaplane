@@ -1,0 +1,267 @@
+Device: cuda
+Outdir: runs_pinn_failure_v2_full
+Preset: full
+Cases:
+  01. 01_baseline_Re200  Re=200  steps=5000  data=0.0  kutta=0.0
+  02. 02_farCp_all_boundaries  Re=200  steps=5000  data=0.0  kutta=0.0
+  03. 03_outflowCp_right_top  Re=200  steps=5000  data=0.0  kutta=0.0
+  04. 04_fourier_Re200  Re=200  steps=5000  data=0.0  kutta=0.0
+  05. 05_kutta_Re200  Re=200  steps=5000  data=0.0  kutta=2.0
+  06. 10_Re200_pure  Re=200  steps=5000  data=0.0  kutta=0.0
+  07. 11_Re200_kutta  Re=200  steps=5000  data=0.0  kutta=2.0
+  08. 10_Re1000_pure  Re=1000  steps=5000  data=0.0  kutta=0.0
+  09. 11_Re1000_kutta  Re=1000  steps=5000  data=0.0  kutta=2.0
+  10. 10_Re5000_pure  Re=5000  steps=5000  data=0.0  kutta=0.0
+  11. 11_Re5000_kutta  Re=5000  steps=5000  data=0.0  kutta=2.0
+  12. 10_Re20000_pure  Re=20000  steps=5000  data=0.0  kutta=0.0
+  13. 11_Re20000_kutta  Re=20000  steps=5000  data=0.0  kutta=2.0
+  14. 20_xfoil_data_only_surface  Re=200  steps=5000  data=100.0  kutta=0.0
+  15. 21_xfoil_data_weakPDE  Re=200  steps=5000  data=100.0  kutta=0.0
+
+================================================================================
+RUN 1/15: 01_baseline_Re200
+================================================================================
+[       01_baseline_Re200      1/5000] loss=1.88e+01 CL=+1.729e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[       01_baseline_Re200    500/5000] loss=7.01e-02 CL=-4.896e-04 data=0.00e+00 pde=3.1e-03 wall=1.2e-04
+[       01_baseline_Re200   1000/5000] loss=1.77e-02 CL=-6.678e-05 data=0.00e+00 pde=2.4e-03 wall=9.6e-05
+[       01_baseline_Re200   1500/5000] loss=1.28e-02 CL=+4.340e-05 data=0.00e+00 pde=2.8e-03 wall=6.8e-05
+[       01_baseline_Re200   2000/5000] loss=1.28e-02 CL=+2.323e-04 data=0.00e+00 pde=3.2e-03 wall=7.4e-05
+[       01_baseline_Re200   2500/5000] loss=1.12e-02 CL=+4.983e-04 data=0.00e+00 pde=2.9e-03 wall=5.3e-05
+[       01_baseline_Re200   3000/5000] loss=1.07e-02 CL=+1.734e-04 data=0.00e+00 pde=3.0e-03 wall=6.3e-05
+[       01_baseline_Re200   3500/5000] loss=8.90e-03 CL=+4.781e-04 data=0.00e+00 pde=2.9e-03 wall=4.9e-05
+[       01_baseline_Re200   4000/5000] loss=1.08e-02 CL=-7.036e-04 data=0.00e+00 pde=3.2e-03 wall=4.5e-05
+[       01_baseline_Re200   4500/5000] loss=7.69e-03 CL=+7.704e-04 data=0.00e+00 pde=3.0e-03 wall=3.2e-05
+[       01_baseline_Re200   5000/5000] loss=1.87e-02 CL=+1.011e-03 data=0.00e+00 pde=3.1e-03 wall=2.0e-04
+
+================================================================================
+RUN 2/15: 02_farCp_all_boundaries
+================================================================================
+[ 02_farCp_all_boundaries      1/5000] loss=1.92e+01 CL=+1.557e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[ 02_farCp_all_boundaries    500/5000] loss=4.95e-02 CL=-4.247e-04 data=0.00e+00 pde=3.2e-03 wall=2.0e-04
+[ 02_farCp_all_boundaries   1000/5000] loss=2.70e-02 CL=-5.503e-05 data=0.00e+00 pde=2.4e-03 wall=2.4e-04
+[ 02_farCp_all_boundaries   1500/5000] loss=1.35e-02 CL=-4.226e-05 data=0.00e+00 pde=2.7e-03 wall=7.2e-05
+[ 02_farCp_all_boundaries   2000/5000] loss=1.35e-02 CL=+1.677e-04 data=0.00e+00 pde=3.2e-03 wall=6.8e-05
+[ 02_farCp_all_boundaries   2500/5000] loss=1.09e-02 CL=+5.250e-04 data=0.00e+00 pde=3.0e-03 wall=5.5e-05
+[ 02_farCp_all_boundaries   3000/5000] loss=2.71e-02 CL=+6.491e-04 data=0.00e+00 pde=3.2e-03 wall=2.9e-04
+[ 02_farCp_all_boundaries   3500/5000] loss=1.11e-02 CL=+1.637e-03 data=0.00e+00 pde=2.9e-03 wall=4.9e-05
+[ 02_farCp_all_boundaries   4000/5000] loss=1.15e-02 CL=+2.410e-03 data=0.00e+00 pde=3.2e-03 wall=3.9e-05
+[ 02_farCp_all_boundaries   4500/5000] loss=9.46e-03 CL=+2.339e-03 data=0.00e+00 pde=3.0e-03 wall=3.5e-05
+[ 02_farCp_all_boundaries   5000/5000] loss=7.88e-03 CL=+1.041e-03 data=0.00e+00 pde=3.2e-03 wall=3.1e-05
+
+================================================================================
+RUN 3/15: 03_outflowCp_right_top
+================================================================================
+[  03_outflowCp_right_top      1/5000] loss=1.92e+01 CL=+1.606e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[  03_outflowCp_right_top    500/5000] loss=5.20e-01 CL=+1.372e-04 data=0.00e+00 pde=3.9e-03 wall=6.2e-04
+[  03_outflowCp_right_top   1000/5000] loss=2.10e-02 CL=-1.197e-04 data=0.00e+00 pde=2.3e-03 wall=1.3e-04
+[  03_outflowCp_right_top   1500/5000] loss=1.34e-02 CL=-2.598e-05 data=0.00e+00 pde=2.7e-03 wall=7.1e-05
+[  03_outflowCp_right_top   2000/5000] loss=1.29e-02 CL=+1.759e-04 data=0.00e+00 pde=3.2e-03 wall=6.3e-05
+[  03_outflowCp_right_top   2500/5000] loss=1.19e-02 CL=+6.281e-04 data=0.00e+00 pde=2.9e-03 wall=6.0e-05
+[  03_outflowCp_right_top   3000/5000] loss=1.06e-02 CL=+3.345e-04 data=0.00e+00 pde=3.1e-03 wall=5.1e-05
+[  03_outflowCp_right_top   3500/5000] loss=9.01e-03 CL=+4.018e-04 data=0.00e+00 pde=2.9e-03 wall=4.6e-05
+[  03_outflowCp_right_top   4000/5000] loss=1.07e-02 CL=+7.304e-04 data=0.00e+00 pde=3.2e-03 wall=6.0e-05
+[  03_outflowCp_right_top   4500/5000] loss=1.08e-02 CL=-1.045e-04 data=0.00e+00 pde=3.0e-03 wall=3.4e-05
+[  03_outflowCp_right_top   5000/5000] loss=8.25e-03 CL=+7.425e-04 data=0.00e+00 pde=3.1e-03 wall=3.5e-05
+
+================================================================================
+RUN 4/15: 04_fourier_Re200
+================================================================================
+[        04_fourier_Re200      1/5000] loss=1.17e+01 CL=-6.021e-03 data=0.00e+00 pde=4.7e-02 wall=5.1e-04
+[        04_fourier_Re200    500/5000] loss=1.03e-01 CL=-8.652e-04 data=0.00e+00 pde=1.6e-02 wall=9.9e-05
+[        04_fourier_Re200   1000/5000] loss=6.33e-02 CL=+6.731e-04 data=0.00e+00 pde=9.1e-03 wall=6.2e-05
+[        04_fourier_Re200   1500/5000] loss=5.31e-02 CL=+1.148e-03 data=0.00e+00 pde=6.2e-03 wall=4.9e-05
+[        04_fourier_Re200   2000/5000] loss=3.52e-02 CL=+1.633e-03 data=0.00e+00 pde=4.4e-03 wall=3.6e-05
+[        04_fourier_Re200   2500/5000] loss=3.74e-02 CL=+1.622e-03 data=0.00e+00 pde=4.2e-03 wall=2.9e-05
+[        04_fourier_Re200   3000/5000] loss=2.88e-02 CL=+1.950e-03 data=0.00e+00 pde=4.1e-03 wall=2.2e-05
+[        04_fourier_Re200   3500/5000] loss=1.91e-02 CL=+1.907e-03 data=0.00e+00 pde=3.0e-03 wall=1.8e-05
+[        04_fourier_Re200   4000/5000] loss=2.09e-02 CL=+1.397e-03 data=0.00e+00 pde=3.8e-03 wall=1.6e-05
+[        04_fourier_Re200   4500/5000] loss=1.88e-02 CL=+1.142e-03 data=0.00e+00 pde=4.0e-03 wall=1.4e-05
+[        04_fourier_Re200   5000/5000] loss=1.66e-02 CL=+8.121e-04 data=0.00e+00 pde=3.7e-03 wall=1.1e-05
+
+================================================================================
+RUN 5/15: 05_kutta_Re200
+================================================================================
+[          05_kutta_Re200      1/5000] loss=1.90e+01 CL=+1.754e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[          05_kutta_Re200    500/5000] loss=4.00e-02 CL=-3.953e-04 data=0.00e+00 pde=3.0e-03 wall=8.8e-05
+[          05_kutta_Re200   1000/5000] loss=1.95e-02 CL=+1.470e-04 data=0.00e+00 pde=2.3e-03 wall=1.0e-04
+[          05_kutta_Re200   1500/5000] loss=1.51e-02 CL=+4.591e-05 data=0.00e+00 pde=2.7e-03 wall=8.0e-05
+[          05_kutta_Re200   2000/5000] loss=1.32e-02 CL=+2.810e-04 data=0.00e+00 pde=3.2e-03 wall=6.2e-05
+[          05_kutta_Re200   2500/5000] loss=6.64e-02 CL=+5.921e-04 data=0.00e+00 pde=3.1e-03 wall=1.0e-03
+[          05_kutta_Re200   3000/5000] loss=1.52e-02 CL=+5.725e-04 data=0.00e+00 pde=3.1e-03 wall=1.5e-04
+[          05_kutta_Re200   3500/5000] loss=9.40e-03 CL=+8.197e-04 data=0.00e+00 pde=2.9e-03 wall=4.3e-05
+[          05_kutta_Re200   4000/5000] loss=9.45e-03 CL=+2.258e-04 data=0.00e+00 pde=3.2e-03 wall=4.1e-05
+[          05_kutta_Re200   4500/5000] loss=2.98e-02 CL=+1.278e-04 data=0.00e+00 pde=2.9e-03 wall=4.3e-04
+[          05_kutta_Re200   5000/5000] loss=1.27e-02 CL=+5.699e-04 data=0.00e+00 pde=3.0e-03 wall=1.2e-04
+
+================================================================================
+RUN 6/15: 10_Re200_pure
+================================================================================
+[           10_Re200_pure      1/5000] loss=1.88e+01 CL=+1.729e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[           10_Re200_pure    500/5000] loss=6.43e-02 CL=-4.960e-04 data=0.00e+00 pde=3.0e-03 wall=1.2e-04
+[           10_Re200_pure   1000/5000] loss=2.25e-02 CL=+1.180e-05 data=0.00e+00 pde=2.4e-03 wall=1.2e-04
+[           10_Re200_pure   1500/5000] loss=1.35e-02 CL=-7.754e-05 data=0.00e+00 pde=2.8e-03 wall=6.9e-05
+[           10_Re200_pure   2000/5000] loss=1.29e-02 CL=+2.844e-04 data=0.00e+00 pde=3.3e-03 wall=6.2e-05
+[           10_Re200_pure   2500/5000] loss=1.06e-02 CL=+6.490e-04 data=0.00e+00 pde=3.1e-03 wall=5.4e-05
+[           10_Re200_pure   3000/5000] loss=1.03e-02 CL=+2.334e-04 data=0.00e+00 pde=3.1e-03 wall=4.7e-05
+[           10_Re200_pure   3500/5000] loss=1.04e-02 CL=-9.203e-04 data=0.00e+00 pde=2.8e-03 wall=5.4e-05
+[           10_Re200_pure   4000/5000] loss=1.08e-02 CL=+7.849e-04 data=0.00e+00 pde=3.2e-03 wall=3.6e-05
+[           10_Re200_pure   4500/5000] loss=7.86e-03 CL=+5.447e-04 data=0.00e+00 pde=3.0e-03 wall=3.2e-05
+[           10_Re200_pure   5000/5000] loss=8.13e-03 CL=+7.014e-04 data=0.00e+00 pde=3.0e-03 wall=4.1e-05
+
+================================================================================
+RUN 7/15: 11_Re200_kutta
+================================================================================
+[          11_Re200_kutta      1/5000] loss=1.90e+01 CL=+1.754e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[          11_Re200_kutta    500/5000] loss=4.00e-02 CL=-3.953e-04 data=0.00e+00 pde=3.0e-03 wall=8.8e-05
+[          11_Re200_kutta   1000/5000] loss=1.95e-02 CL=+1.470e-04 data=0.00e+00 pde=2.3e-03 wall=1.0e-04
+[          11_Re200_kutta   1500/5000] loss=1.51e-02 CL=+4.591e-05 data=0.00e+00 pde=2.7e-03 wall=8.0e-05
+[          11_Re200_kutta   2000/5000] loss=1.32e-02 CL=+2.810e-04 data=0.00e+00 pde=3.2e-03 wall=6.2e-05
+[          11_Re200_kutta   2500/5000] loss=6.64e-02 CL=+5.921e-04 data=0.00e+00 pde=3.1e-03 wall=1.0e-03
+[          11_Re200_kutta   3000/5000] loss=1.52e-02 CL=+5.725e-04 data=0.00e+00 pde=3.1e-03 wall=1.5e-04
+[          11_Re200_kutta   3500/5000] loss=9.40e-03 CL=+8.197e-04 data=0.00e+00 pde=2.9e-03 wall=4.3e-05
+[          11_Re200_kutta   4000/5000] loss=9.45e-03 CL=+2.258e-04 data=0.00e+00 pde=3.2e-03 wall=4.1e-05
+[          11_Re200_kutta   4500/5000] loss=2.98e-02 CL=+1.278e-04 data=0.00e+00 pde=2.9e-03 wall=4.3e-04
+[          11_Re200_kutta   5000/5000] loss=1.27e-02 CL=+5.699e-04 data=0.00e+00 pde=3.0e-03 wall=1.2e-04
+
+================================================================================
+RUN 8/15: 10_Re1000_pure
+================================================================================
+[          10_Re1000_pure      1/5000] loss=1.88e+01 CL=+1.729e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[          10_Re1000_pure    500/5000] loss=3.77e-02 CL=-4.795e-04 data=0.00e+00 pde=3.0e-03 wall=9.9e-05
+[          10_Re1000_pure   1000/5000] loss=1.85e-02 CL=-1.982e-04 data=0.00e+00 pde=2.2e-03 wall=1.2e-04
+[          10_Re1000_pure   1500/5000] loss=2.08e-02 CL=-3.034e-04 data=0.00e+00 pde=2.6e-03 wall=7.3e-05
+[          10_Re1000_pure   2000/5000] loss=1.17e-02 CL=-1.063e-04 data=0.00e+00 pde=3.0e-03 wall=6.0e-05
+[          10_Re1000_pure   2500/5000] loss=9.98e-03 CL=-4.469e-04 data=0.00e+00 pde=2.7e-03 wall=5.1e-05
+[          10_Re1000_pure   3000/5000] loss=8.99e-03 CL=+5.348e-04 data=0.00e+00 pde=2.7e-03 wall=4.5e-05
+[          10_Re1000_pure   3500/5000] loss=3.32e-02 CL=+1.910e-03 data=0.00e+00 pde=2.5e-03 wall=5.0e-05
+[          10_Re1000_pure   4000/5000] loss=3.05e-02 CL=+2.335e-04 data=0.00e+00 pde=2.5e-03 wall=1.9e-04
+[          10_Re1000_pure   4500/5000] loss=1.23e-02 CL=+1.155e-03 data=0.00e+00 pde=2.3e-03 wall=1.4e-04
+[          10_Re1000_pure   5000/5000] loss=3.68e-02 CL=+3.243e-04 data=0.00e+00 pde=2.4e-03 wall=5.8e-04
+
+================================================================================
+RUN 9/15: 11_Re1000_kutta
+================================================================================
+[         11_Re1000_kutta      1/5000] loss=1.90e+01 CL=+1.754e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[         11_Re1000_kutta    500/5000] loss=4.95e-02 CL=-2.952e-04 data=0.00e+00 pde=3.0e-03 wall=1.1e-04
+[         11_Re1000_kutta   1000/5000] loss=2.00e-02 CL=-1.840e-04 data=0.00e+00 pde=2.2e-03 wall=7.5e-05
+[         11_Re1000_kutta   1500/5000] loss=1.48e-02 CL=-1.248e-04 data=0.00e+00 pde=2.5e-03 wall=6.6e-05
+[         11_Re1000_kutta   2000/5000] loss=1.32e-02 CL=-3.784e-04 data=0.00e+00 pde=2.9e-03 wall=7.8e-05
+[         11_Re1000_kutta   2500/5000] loss=9.63e-03 CL=-4.588e-04 data=0.00e+00 pde=2.6e-03 wall=5.1e-05
+[         11_Re1000_kutta   3000/5000] loss=1.32e-02 CL=+5.901e-04 data=0.00e+00 pde=2.6e-03 wall=4.9e-05
+[         11_Re1000_kutta   3500/5000] loss=7.75e-03 CL=+2.429e-04 data=0.00e+00 pde=2.4e-03 wall=4.2e-05
+[         11_Re1000_kutta   4000/5000] loss=7.79e-03 CL=+2.885e-04 data=0.00e+00 pde=2.7e-03 wall=3.5e-05
+[         11_Re1000_kutta   4500/5000] loss=7.43e-03 CL=+1.872e-04 data=0.00e+00 pde=2.3e-03 wall=4.1e-05
+[         11_Re1000_kutta   5000/5000] loss=8.24e-03 CL=+2.097e-04 data=0.00e+00 pde=2.3e-03 wall=3.2e-05
+
+================================================================================
+RUN 10/15: 10_Re5000_pure
+================================================================================
+[          10_Re5000_pure      1/5000] loss=1.88e+01 CL=+1.729e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[          10_Re5000_pure    500/5000] loss=3.83e-02 CL=-3.270e-04 data=0.00e+00 pde=3.1e-03 wall=9.6e-05
+[          10_Re5000_pure   1000/5000] loss=2.85e-02 CL=-1.850e-04 data=0.00e+00 pde=2.2e-03 wall=2.7e-04
+[          10_Re5000_pure   1500/5000] loss=1.25e-02 CL=-2.083e-04 data=0.00e+00 pde=2.6e-03 wall=6.7e-05
+[          10_Re5000_pure   2000/5000] loss=1.19e-02 CL=-8.623e-05 data=0.00e+00 pde=3.0e-03 wall=7.0e-05
+[          10_Re5000_pure   2500/5000] loss=9.85e-03 CL=-8.333e-05 data=0.00e+00 pde=2.7e-03 wall=5.1e-05
+[          10_Re5000_pure   3000/5000] loss=9.11e-03 CL=+4.914e-04 data=0.00e+00 pde=2.6e-03 wall=4.6e-05
+[          10_Re5000_pure   3500/5000] loss=8.10e-03 CL=+1.121e-03 data=0.00e+00 pde=2.4e-03 wall=4.3e-05
+[          10_Re5000_pure   4000/5000] loss=7.89e-03 CL=+1.590e-04 data=0.00e+00 pde=2.6e-03 wall=3.6e-05
+[          10_Re5000_pure   4500/5000] loss=6.54e-03 CL=-3.672e-05 data=0.00e+00 pde=2.4e-03 wall=3.4e-05
+[          10_Re5000_pure   5000/5000] loss=9.19e-03 CL=-2.716e-03 data=0.00e+00 pde=2.3e-03 wall=3.2e-05
+
+================================================================================
+RUN 11/15: 11_Re5000_kutta
+================================================================================
+[         11_Re5000_kutta      1/5000] loss=1.90e+01 CL=+1.753e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[         11_Re5000_kutta    500/5000] loss=4.14e-02 CL=-4.795e-04 data=0.00e+00 pde=3.1e-03 wall=8.8e-05
+[         11_Re5000_kutta   1000/5000] loss=1.77e-02 CL=-1.663e-04 data=0.00e+00 pde=2.2e-03 wall=9.1e-05
+[         11_Re5000_kutta   1500/5000] loss=1.32e-02 CL=-2.484e-04 data=0.00e+00 pde=2.6e-03 wall=6.5e-05
+[         11_Re5000_kutta   2000/5000] loss=6.23e-02 CL=-4.740e-04 data=0.00e+00 pde=3.0e-03 wall=8.3e-05
+[         11_Re5000_kutta   2500/5000] loss=1.03e-02 CL=-6.280e-04 data=0.00e+00 pde=2.5e-03 wall=5.9e-05
+[         11_Re5000_kutta   3000/5000] loss=1.36e-02 CL=-7.050e-04 data=0.00e+00 pde=2.5e-03 wall=5.6e-05
+[         11_Re5000_kutta   3500/5000] loss=2.79e-02 CL=-9.380e-04 data=0.00e+00 pde=2.3e-03 wall=4.0e-04
+[         11_Re5000_kutta   4000/5000] loss=7.52e-03 CL=+7.526e-05 data=0.00e+00 pde=2.6e-03 wall=3.5e-05
+[         11_Re5000_kutta   4500/5000] loss=6.97e-03 CL=+1.606e-04 data=0.00e+00 pde=2.3e-03 wall=3.7e-05
+[         11_Re5000_kutta   5000/5000] loss=6.88e-03 CL=+8.438e-04 data=0.00e+00 pde=2.3e-03 wall=3.6e-05
+
+================================================================================
+RUN 12/15: 10_Re20000_pure
+================================================================================
+[         10_Re20000_pure      1/5000] loss=1.88e+01 CL=+1.729e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[         10_Re20000_pure    500/5000] loss=3.74e-02 CL=-5.060e-04 data=0.00e+00 pde=3.1e-03 wall=9.1e-05
+[         10_Re20000_pure   1000/5000] loss=1.70e-02 CL=-2.522e-04 data=0.00e+00 pde=2.2e-03 wall=7.9e-05
+[         10_Re20000_pure   1500/5000] loss=1.27e-02 CL=-2.025e-04 data=0.00e+00 pde=2.7e-03 wall=7.5e-05
+[         10_Re20000_pure   2000/5000] loss=2.12e-02 CL=-1.499e-04 data=0.00e+00 pde=2.9e-03 wall=6.3e-05
+[         10_Re20000_pure   2500/5000] loss=1.02e-02 CL=-1.285e-04 data=0.00e+00 pde=2.6e-03 wall=6.0e-05
+[         10_Re20000_pure   3000/5000] loss=1.06e-02 CL=-1.321e-05 data=0.00e+00 pde=2.5e-03 wall=7.5e-05
+[         10_Re20000_pure   3500/5000] loss=8.34e-03 CL=-4.177e-04 data=0.00e+00 pde=2.4e-03 wall=5.3e-05
+[         10_Re20000_pure   4000/5000] loss=8.92e-03 CL=+2.675e-04 data=0.00e+00 pde=2.6e-03 wall=5.7e-05
+[         10_Re20000_pure   4500/5000] loss=7.16e-03 CL=+5.325e-05 data=0.00e+00 pde=2.3e-03 wall=4.4e-05
+[         10_Re20000_pure   5000/5000] loss=7.49e-03 CL=+4.524e-04 data=0.00e+00 pde=2.3e-03 wall=4.3e-05
+
+================================================================================
+RUN 13/15: 11_Re20000_kutta
+================================================================================
+[        11_Re20000_kutta      1/5000] loss=1.90e+01 CL=+1.753e-02 data=0.00e+00 pde=4.2e-02 wall=1.8e-02
+[        11_Re20000_kutta    500/5000] loss=4.34e-02 CL=-3.502e-04 data=0.00e+00 pde=3.0e-03 wall=9.6e-05
+[        11_Re20000_kutta   1000/5000] loss=1.69e-02 CL=-1.942e-04 data=0.00e+00 pde=2.2e-03 wall=7.4e-05
+[        11_Re20000_kutta   1500/5000] loss=1.55e-02 CL=-2.797e-04 data=0.00e+00 pde=2.6e-03 wall=6.9e-05
+[        11_Re20000_kutta   2000/5000] loss=2.99e-02 CL=-6.056e-06 data=0.00e+00 pde=2.9e-03 wall=6.4e-05
+[        11_Re20000_kutta   2500/5000] loss=2.39e-02 CL=-7.498e-04 data=0.00e+00 pde=2.6e-03 wall=5.8e-05
+[        11_Re20000_kutta   3000/5000] loss=2.96e-02 CL=+1.803e-04 data=0.00e+00 pde=2.4e-03 wall=4.4e-04
+[        11_Re20000_kutta   3500/5000] loss=4.17e-02 CL=+6.648e-04 data=0.00e+00 pde=2.2e-03 wall=4.0e-04
+[        11_Re20000_kutta   4000/5000] loss=8.70e-03 CL=-2.026e-04 data=0.00e+00 pde=2.6e-03 wall=4.3e-05
+[        11_Re20000_kutta   4500/5000] loss=7.03e-03 CL=-8.183e-05 data=0.00e+00 pde=2.3e-03 wall=3.3e-05
+[        11_Re20000_kutta   5000/5000] loss=7.40e-03 CL=+2.846e-04 data=0.00e+00 pde=2.3e-03 wall=3.7e-05
+
+================================================================================
+RUN 14/15: 20_xfoil_data_only_surface
+================================================================================
+[20_xfoil_data_only_surface      1/5000] loss=1.15e+01 CL=+6.991e-02 data=1.15e-01 pde=4.2e-02 wall=1.8e-02
+[20_xfoil_data_only_surface    500/5000] loss=5.90e-01 CL=+8.167e-01 data=5.89e-03 pde=6.7e+00 wall=3.6e-04
+[20_xfoil_data_only_surface   1000/5000] loss=2.51e-01 CL=+8.110e-01 data=2.51e-03 pde=6.8e+00 wall=5.5e-05
+[20_xfoil_data_only_surface   1500/5000] loss=3.14e-02 CL=+7.975e-01 data=3.14e-04 pde=4.0e+00 wall=3.2e-05
+[20_xfoil_data_only_surface   2000/5000] loss=3.57e-02 CL=+7.962e-01 data=3.57e-04 pde=3.6e+00 wall=2.2e-05
+[20_xfoil_data_only_surface   2500/5000] loss=2.55e-02 CL=+7.954e-01 data=2.55e-04 pde=4.5e+00 wall=1.5e-05
+[20_xfoil_data_only_surface   3000/5000] loss=4.97e-02 CL=+7.917e-01 data=4.96e-04 pde=4.7e+00 wall=2.0e-05
+[20_xfoil_data_only_surface   3500/5000] loss=3.47e-02 CL=+7.996e-01 data=3.47e-04 pde=2.7e+00 wall=9.9e-06
+[20_xfoil_data_only_surface   4000/5000] loss=3.96e-02 CL=+8.004e-01 data=3.96e-04 pde=1.7e+00 wall=1.2e-05
+[20_xfoil_data_only_surface   4500/5000] loss=3.87e-02 CL=+7.897e-01 data=3.87e-04 pde=1.6e+00 wall=9.0e-06
+[20_xfoil_data_only_surface   5000/5000] loss=2.53e-02 CL=+7.922e-01 data=2.53e-04 pde=1.0e+00 wall=8.1e-06
+
+================================================================================
+RUN 15/15: 21_xfoil_data_weakPDE
+================================================================================
+[   21_xfoil_data_weakPDE      1/5000] loss=1.32e+01 CL=+5.401e-02 data=1.15e-01 pde=4.2e-02 wall=1.8e-02
+[   21_xfoil_data_weakPDE    500/5000] loss=1.53e+00 CL=+8.039e-01 data=7.71e-03 pde=7.4e-02 wall=5.0e-03
+[   21_xfoil_data_weakPDE   1000/5000] loss=4.62e-01 CL=+7.964e-01 data=1.12e-03 pde=7.7e-02 wall=3.0e-02
+[   21_xfoil_data_weakPDE   1500/5000] loss=2.60e-01 CL=+7.884e-01 data=5.79e-04 pde=5.9e-02 wall=2.0e-02
+[   21_xfoil_data_weakPDE   2000/5000] loss=1.69e-01 CL=+8.252e-01 data=3.76e-04 pde=3.4e-02 wall=1.3e-02
+[   21_xfoil_data_weakPDE   2500/5000] loss=2.24e+00 CL=+7.653e-01 data=9.23e-03 pde=1.1e-01 wall=3.2e-02
+[   21_xfoil_data_weakPDE   3000/5000] loss=2.01e-01 CL=+7.861e-01 data=2.23e-04 pde=5.9e-02 wall=1.0e-02
+[   21_xfoil_data_weakPDE   3500/5000] loss=8.09e-02 CL=+7.638e-01 data=1.55e-04 pde=4.9e-02 wall=3.4e-03
+[   21_xfoil_data_weakPDE   4000/5000] loss=6.03e-02 CL=+8.056e-01 data=1.76e-04 pde=3.2e-02 wall=2.3e-03
+[   21_xfoil_data_weakPDE   4500/5000] loss=4.67e-02 CL=+7.978e-01 data=1.03e-04 pde=3.1e-02 wall=1.8e-03
+[   21_xfoil_data_weakPDE   5000/5000] loss=5.20e-02 CL=+7.817e-01 data=1.68e-04 pde=3.8e-02 wall=1.9e-03
+
+Creating summary plots...
+                          case  ...                                           case_dir
+0            01_baseline_Re200  ...        runs_pinn_failure_v2_full/01_baseline_Re200
+1      02_farCp_all_boundaries  ...  runs_pinn_failure_v2_full/02_farCp_all_boundaries
+2       03_outflowCp_right_top  ...   runs_pinn_failure_v2_full/03_outflowCp_right_top
+3             04_fourier_Re200  ...         runs_pinn_failure_v2_full/04_fourier_Re200
+4               05_kutta_Re200  ...           runs_pinn_failure_v2_full/05_kutta_Re200
+5               10_Re1000_pure  ...           runs_pinn_failure_v2_full/10_Re1000_pure
+6              10_Re20000_pure  ...          runs_pinn_failure_v2_full/10_Re20000_pure
+7                10_Re200_pure  ...            runs_pinn_failure_v2_full/10_Re200_pure
+8               10_Re5000_pure  ...           runs_pinn_failure_v2_full/10_Re5000_pure
+9              11_Re1000_kutta  ...          runs_pinn_failure_v2_full/11_Re1000_kutta
+10            11_Re20000_kutta  ...         runs_pinn_failure_v2_full/11_Re20000_kutta
+11              11_Re200_kutta  ...           runs_pinn_failure_v2_full/11_Re200_kutta
+12             11_Re5000_kutta  ...          runs_pinn_failure_v2_full/11_Re5000_kutta
+13  20_xfoil_data_only_surface  ...  runs_pinn_failure_v2_full/20_xfoil_data_only_s...
+14       21_xfoil_data_weakPDE  ...    runs_pinn_failure_v2_full/21_xfoil_data_weakPDE
+
+[15 rows x 17 columns]
+
+Done. Main summary: runs_pinn_failure_v2_full/summary.csv
+Plots: runs_pinn_failure_v2_full/summary_CL_bar.png, runs_pinn_failure_v2_full/summary_re_sweep.png

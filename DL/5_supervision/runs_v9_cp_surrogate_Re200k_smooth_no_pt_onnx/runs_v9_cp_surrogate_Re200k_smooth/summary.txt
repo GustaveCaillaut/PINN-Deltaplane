@@ -1,0 +1,58 @@
+{
+  "csv": "xfoil_cp_dataset_naca2412_dense_Re200k/xfoil_cp_dataset.csv",
+  "num_rows": 16160,
+  "num_alphas": 101,
+  "alpha_min": -25.0,
+  "alpha_max": 25.0,
+  "train_rows": 13736,
+  "val_rows": 2424,
+  "best_epoch": 1758,
+  "best_val_mse": 0.0011833489406853914,
+  "train_metrics": {
+    "mse": 0.000796339416410774,
+    "rmse": 0.02821948565542698,
+    "mae": 0.015336633659899235,
+    "max_abs": 0.3200249671936035
+  },
+  "val_metrics": {
+    "mse": 0.0011833489406853914,
+    "rmse": 0.034399840980768204,
+    "mae": 0.018885575234889984,
+    "max_abs": 0.5063037872314453
+  },
+  "input_mean": [
+    -0.0961751714348793,
+    0.011527227237820625,
+    0.03028538078069687,
+    0.0004734662361443043,
+    0.9679843187332153
+  ],
+  "input_std": [
+    0.3310079276561737,
+    0.04120206460356712,
+    0.9995667934417725,
+    0.2493385523557663,
+    0.028577934950590134
+  ],
+  "cp_mean": -0.46582210063934326,
+  "cp_std": 1.6084941625595093,
+  "model": {
+    "width": 128,
+    "depth": 4,
+    "dropout": 0.0,
+    "fourier": true,
+    "fourier_freqs": 8,
+    "fourier_scale": 0.5
+  },
+  "inputs": [
+    "x_pinn",
+    "y",
+    "side",
+    "sin_alpha",
+    "cos_alpha"
+  ],
+  "outputs": [
+    "Cp"
+  ],
+  "note": "CD_pressure is pressure drag only; do not treat it as total aerodynamic drag."
+}

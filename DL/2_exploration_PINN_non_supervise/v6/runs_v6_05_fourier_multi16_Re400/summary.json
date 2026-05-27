@@ -1,0 +1,74 @@
+{
+  "device": "cuda",
+  "U": 2.0,
+  "alpha_deg": 5.0,
+  "nu": 0.005,
+  "Re": 400.0,
+  "q": 2.0,
+  "freestream": {
+    "u": 1.992389396183491,
+    "v": 0.17431148549531633
+  },
+  "domain": {
+    "x_min": -4.0,
+    "x_max": 6.0,
+    "y_min": -3.0,
+    "y_max": 3.0
+  },
+  "pressure_gauge": {
+    "x": 6.0,
+    "y": 0.0,
+    "weight": 1.0
+  },
+  "naca": {
+    "m": 0.02,
+    "p": 0.4,
+    "t": 0.12
+  },
+  "fourier": {
+    "mode": "multiscale",
+    "n_freqs": 16,
+    "scale": 1.0,
+    "include_raw": true
+  },
+  "normal_check": {
+    "ok": true,
+    "frac_plus_outside": 1.0,
+    "frac_minus_inside": 0.9991666666666666
+  },
+  "inflow_boundaries": [
+    "left",
+    "bottom"
+  ],
+  "outflow_boundaries": [
+    "right",
+    "top"
+  ],
+  "CL_teacher_reference": 0.3792563167084713,
+  "pressure_only": {
+    "Fx": -1.7981044948101044e-05,
+    "Fy": -1.580268144607544e-05,
+    "D": -1.928991608228497e-05,
+    "L": -1.4175396144382379e-05,
+    "CD": -9.644958041142484e-06,
+    "CL": -7.0876980721911894e-06
+  },
+  "validation": {
+    "global_pde_mse": 0.004317392595112324,
+    "global_div_mse": 5.920186231378466e-05,
+    "near_pde_mse": 2.535171006456949e-06,
+    "near_div_mse": 3.899043221622378e-08
+  },
+  "loss_weights": {
+    "w_cl": 0.0,
+    "w_pressure_gauge": 1.0,
+    "w_outflow_cp": 0.0,
+    "w_far_cp": 0.0,
+    "w_pde": 1.0,
+    "w_div": 5.0,
+    "w_near_pde": 20.0,
+    "w_near_div": 50.0,
+    "w_inflow_vel": 10.0,
+    "w_wall": 50.0
+  }
+}

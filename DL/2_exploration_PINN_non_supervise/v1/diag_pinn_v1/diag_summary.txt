@@ -1,0 +1,50 @@
+=== PINN Airfoil V1 diagnostics ===
+
+checkpoint: pinn_airfoil_v1.pt
+device: cuda
+domain: x=[-1.5,2.5], y=[-1.0,1.0]
+U range: [0.5,1.5]
+alpha max deg: 15.000
+nu: 0.02
+airfoil signed area: -8.228060e-02
+surface perimeter: 2.043917e+00
+
+=== Validation metrics ===
+pde_mse: 1.003151e-02
+mom_x_rms: 8.924908e-02
+mom_y_rms: 4.545445e-02
+div_mse: 1.315401e-02
+div_rms: 1.146909e-01
+near_wall_pde_mse: 4.874665e-01
+near_wall_div_mse: 2.377274e-01
+near_wall_div_rms: 4.875729e-01
+inlet_u_rmse: 1.275527e-02
+inlet_v_rmse: 8.588936e-03
+inlet_speed_rmse: 1.537747e-02
+far_u_rmse: 2.244719e-02
+far_v_rmse: 1.600037e-02
+far_speed_rmse: 2.756607e-02
+outlet_p_rms: 1.267456e-02
+outlet_p_mean: -2.484927e-04
+wall_u_rms: 2.970186e-02
+wall_v_rms: 9.232961e-03
+wall_speed_rms: 3.110383e-02
+wall_speed_max: 1.192940e-01
+
+=== Pressure force alpha sweep quick read ===
+alpha=-10.0 deg | Fx=+2.709624e-02, Fy=+6.660700e-03, CLp=+1.332140e-02, CDp=+5.419248e-02
+alpha=-5.0 deg | Fx=+2.738779e-02, Fy=+1.040851e-02, CLp=+2.081701e-02, CDp=+5.477558e-02
+alpha=+0.0 deg | Fx=+2.731820e-02, Fy=+1.465540e-02, CLp=+2.931081e-02, CDp=+5.463640e-02
+alpha=+5.0 deg | Fx=+2.664463e-02, Fy=+1.842951e-02, CLp=+3.685902e-02, CDp=+5.328926e-02
+alpha=+10.0 deg | Fx=+2.528840e-02, Fy=+2.050791e-02, CLp=+4.101582e-02, CDp=+5.057681e-02
+
+=== U scaling quick read ===
+U=0.500 | Fx=+8.225702e-03, Fy=+3.224164e-03, CLp=+2.579331e-02, CDp=+6.580561e-02
+U=0.625 | Fx=+1.275758e-02, Fy=+7.313155e-03, CLp=+3.744335e-02, CDp=+6.531878e-02
+U=0.750 | Fx=+1.742022e-02, Fy=+1.131649e-02, CLp=+4.023642e-02, CDp=+6.193858e-02
+U=0.875 | Fx=+2.209903e-02, Fy=+1.498266e-02, CLp=+3.913839e-02, CDp=+5.772808e-02
+U=1.000 | Fx=+2.664463e-02, Fy=+1.842951e-02, CLp=+3.685902e-02, CDp=+5.328926e-02
+U=1.125 | Fx=+3.088236e-02, Fy=+2.199487e-02, CLp=+3.475733e-02, CDp=+4.880175e-02
+U=1.250 | Fx=+3.464689e-02, Fy=+2.580900e-02, CLp=+3.303553e-02, CDp=+4.434803e-02
+U=1.375 | Fx=+3.781670e-02, Fy=+2.958219e-02, CLp=+3.129355e-02, CDp=+4.000444e-02
+U=1.500 | Fx=+4.033135e-02, Fy=+3.277034e-02, CLp=+2.912919e-02, CDp=+3.585009e-02
