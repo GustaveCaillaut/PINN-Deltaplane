@@ -8,6 +8,16 @@ The project evolved from simple analytical aerodynamic laws, to direct neural re
 
 ---
 
+## Releases
+
+Compiled versions of the project are available in the GitHub **Releases** section.
+
+The release zip contains the packaged Unreal project, including the executable `.exe`.
+
+After downloading and extracting the zip, run the `.exe` from inside the extracted folder. The executable should not be moved outside its packaged directory, because Unreal builds depend on associated `.pak` and content files.
+
+---
+
 ## Repository structure
 
 ```text
@@ -122,16 +132,6 @@ F = - ∫ Cp n ds
 ```
 
 This gives a physically interpretable lift coefficient while remaining simple enough for real-time inference in Unreal.
-
----
-
-## Releases
-
-Compiled versions of the project are available in the GitHub **Releases** section.
-
-The release zip contains the packaged Unreal project, including the executable `.exe`.
-
-After downloading and extracting the zip, run the `.exe` from inside the extracted folder. The executable should not be moved outside its packaged directory, because Unreal builds depend on associated `.pak` and content files.
 
 ---
 
